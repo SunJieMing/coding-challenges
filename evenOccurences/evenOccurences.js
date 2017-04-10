@@ -1,6 +1,6 @@
 /*
  *  * Find the first item that occurs an even number of times in an array.
- *   * Remember to handle multiple even-occurance items and return the first one. 
+ *   * Remember to handle multiple even-occurance items and return the first one.
  *    * Return null if there are no even-occurance items.
  *    */
 
@@ -11,5 +11,14 @@
  *    */
 
 const evenOccurence = (arr) => {
-  // Your code here.
+  for ( i = 0; i < arr.length; i++){
+    for ( j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        return arr[i];
+      }
+    }
+  }
 };
+
+const onlyEven = evenOccurence([1, 3, 3, 5 ]);
+console.log(onlyEven);
