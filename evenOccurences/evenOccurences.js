@@ -11,5 +11,5 @@
  *    */
 
 const evenOccurence = (arr) => {
-	// Your code here.
+  // Your code here.
 };
