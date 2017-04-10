@@ -12,4 +12,15 @@
 
 const evenOccurence = (arr) => {
   // Your code here.
+  let arr2 = []
+  for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+    let k = 0;
+    for (let j = arr.length - 1; j >= 0; j--) {
+    	if (arr[j] === arr[i]) k++;
+    }
+    if(k%2===0) return(arr[i]);
+  }
+//   console.log('null');
+  return(null);
 };
