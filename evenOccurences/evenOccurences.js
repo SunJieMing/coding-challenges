@@ -23,4 +23,4 @@ const evenOccurence = (arr) => {
   }
 //   console.log('null');
   return(null);
-};
+};  
