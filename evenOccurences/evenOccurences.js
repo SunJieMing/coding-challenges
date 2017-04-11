@@ -6,10 +6,10 @@
 
 /*
  *  * example usage:
- *   * var onlyEven = evenOccurence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
+ *   * const onlyEven = evenOccurence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
  *    * console.log(onlyEven); //  4
  *    */
 
 const evenOccurence = (arr) => {
-	// Your code here.
+  // Your code here.
 };
