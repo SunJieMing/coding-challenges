@@ -12,4 +12,15 @@
 
 const rockPaperScissors = () => {
 	// TODO: your solution here
+	let box = [];
+	const rps = ['rock', 'paper', 'scissor'];
+	for (var i = rps.length - 1; i >= 0; i--) {
+		for (var j = rps.length - 1; j >= 0; j--) {
+			for (var k = rps.length - 1; k >= 0; k--) {
+				box.push([rps[i], rps[j], rps[k]]);
+              
+			}
+		}
+	}
+	return box;
 };
