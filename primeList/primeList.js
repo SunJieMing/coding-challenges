@@ -3,6 +3,6 @@
  * check out the Sieve of Eratosthenes on Wikipedia.
 */
 
-var primeSieve = function(start, end) {
+const primeSieve = (start, end) => {
   // Return a list of all prime numbers >= start and <= end
 };
