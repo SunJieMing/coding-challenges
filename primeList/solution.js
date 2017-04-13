@@ -15,13 +15,14 @@ const primeSieve = (start, end) => {
   for (let i = 2; i <= upperLimit; i++) {
     if (primes[i]) {
       for (let j = i * i; j <= end; j += i) {
+        console.log(i);
         primes[j] = false;
       }
     }
   }
 
   for (let i = 2; i <= end; i++) {
-    if (primes[i] && i >= lowerLimit) output.push(i);
+    if (primes[i] && i >= start) output.push(i);
   }
 
   return output;
