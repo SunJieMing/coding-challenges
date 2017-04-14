@@ -7,6 +7,5 @@ const insertionSort = (array) => {
     }
     array[j + 1] = temp;
   }
-  // Your code goes here. Feel free to add helper functions if needed.
   return array;
 };
