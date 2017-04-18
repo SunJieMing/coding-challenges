@@ -12,7 +12,7 @@
  * Don't use JavaScript's built-in sorting function (Array.prototype.sort).
  *
  * What's the time complexity of your algorithm?  Are there ways you can improve it?
- *
+ * Definitely O(n^2), improvements include using a better sorting method, like cocktail sort, where you start from the front, moving bigger stuff up, and then at the end, moving smaller stuff down.
 */
 
 /*
@@ -22,5 +22,37 @@
 */
 
 const bubbleSort = (arr) => {
-  //code here
+  let changed = true;
+  while(changed){
+    let count = 0;
+    arr.forEach((number, i) => {
+      if (arr[i + 1] === undefined) arr[i] = arr[i];
+      if (arr[i] > arr[i + 1]) {
+        arr[i + 1] += arr[i];
+        arr[i] = arr[i + 1] - arr[i];
+        arr[i + 1] -= arr[i];
+        count++;
+      }
+    });
+    if (count === 0) changed = false;
+  }
+  return arr;
 };
+
+// const bubbleSort = (arr) => {
+//   let changed = true;
+//   while(changed){
+//     let count = 0;
+//     for (var i = 0; i < arr.length; i++) {
+//       if (arr[i + 1] === undefined) arr[i] = arr[i];
+//       if (arr[i] > arr[i + 1]) {
+//         arr[i + 1] += arr[i];
+//         arr[i] = arr[i + 1] - arr[i];
+//         arr[i + 1] -= arr[i];
+//         count++;
+//       }
+//     }
+//     if (count === 0) changed = false;
+//   }
+//   return arr;
+// };
