@@ -15,3 +15,12 @@
  * breadthFirstSearch(tree, 2);// will return true before it recursively searches `z`
  */
 
+const breadthFirstSearch = (obj) => {
+  const deeperArr = [];
+  Object.keys(obj).forEach((key) => {
+    if (Object.keys(obj[key]) !== [])
+    {
+      deeperArr.push
+    } 
+  });
+}

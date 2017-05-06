@@ -29,6 +29,6 @@ const mergeSort = (arr) => {
   if (arr.length < 2) return arr;
   const midl = Math.floor(arr.length / 2);
   const back = arr.slice(0, midl);
-  const forw = arr.slice(midl, arr.length);
+  const forw = arr.slice(midl);
   return merge(mergeSort(back), mergeSort(forw));
 };

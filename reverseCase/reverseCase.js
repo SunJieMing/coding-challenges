@@ -4,3 +4,10 @@
  * Assume that each string will contain only spaces and letters.
  */
 
+const reverseCase = (str) => {
+  str.split(' ').forEach((word) => {
+    word.split().forEach((letter) => {
+      if (letter.toUpperCase() === letter) 
+    });
+  });
+} 

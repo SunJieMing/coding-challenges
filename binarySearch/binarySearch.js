@@ -10,10 +10,27 @@
 **/
 
 const binarySearch = (nums, target) {
-  const mid = Math.floor(nums.length / 2);
-  const max = nums.length - 1;
-  if (nums[mid] === target) return mid;
-  if (nums[mid] > target && nums.length > 1) return (mid - binarySearch(nums.splice(0, mid), target));
-  if (nums[mid] < target && nums.length > 1) return (mid + binarySearch(nums.splice(mid, max), target));
-  return -1;
+	let min = 0;
+	let max = nums.length -1;
+	let guessIndex;
+
+	while (mix <= max) {
+		guessIndex = Math.floor((min + max) / 2);
+		if (nums[guessIndex] === target) return guessIndex;
+		if (nums[guessIndex] > target) {
+			max = guessIndex - 1;
+		} else {
+			min = guessIndex + 1;
+		}
+	}
+	return -1;
 };
+
+// const binarySearch = (nums, target) {
+//   const mid = Math.floor(nums.length / 2);
+//   const max = nums.length - 1;
+//   if (nums[mid] === target) return mid;
+//   if (nums[mid] > target && nums.length > 1) return (mid - binarySearch(nums.splice(0, mid), target));
+//   if (nums[mid] < target && nums.length > 1) return (mid + binarySearch(nums.splice(mid, max), target));
+//   return -1;
+// };
