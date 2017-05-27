@@ -28,3 +28,13 @@
  * Constraint 2: Do this in constant space
  * Constraint 3: Do not mutate the original nodes in any way
  */
+const hasCycle = (node) => {
+  let current = node;
+  const obj = {};
+  while (node.next) {
+    if (obj[current]) return true;
+    if (!obj[current]) obj[current] = true;
+    node = node.next;
+  }
+  return false;
+};

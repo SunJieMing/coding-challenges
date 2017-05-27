@@ -40,7 +40,7 @@ class LinkedList {
   }
 
   removeHead() {
-    let iterate = this.head;
+2    let iterate = this.head;
     this.head = iterate.next;
     return iterate.value;
   }

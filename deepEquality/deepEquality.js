@@ -8,3 +8,12 @@
   * deepEquals([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]); // true
   * deepEquals([1, 2, 3, 4, 5],[1, 3, 4, 5, 6]); // false
   */
+
+const deepEquals = (arr1, arr2) => {
+  let ans = true;
+  if (arr1.length !== arr2.length && Array.isArray(arr1) && Array.isArray(arr2)) return false;
+  arr1.forEach((item, i) => {
+    if (item !== arr2[i]) ans = false;
+  });
+  return ans;
+};

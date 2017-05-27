@@ -13,5 +13,18 @@
   //
 
 export default const palindromePrime = (max) => {
-
-}
+  let primed;
+  for (let i = max; i >= 0; i--) {
+    primed = true;
+    for (let j = 0; j < Math.sqrt(max); j++) {
+      if (i % j === 0) {
+        primed = false;
+        break;
+      }
+    }
+    if (primed) {
+      if (i.toString() === i.toString().split('').reverse().join('')) return i;
+    }
+  }
+  return "none found in range";
+};

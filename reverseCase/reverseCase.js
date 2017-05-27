@@ -5,9 +5,12 @@
  */
 
 const reverseCase = (str) => {
-  str.split(' ').forEach((word) => {
-    word.split().forEach((letter) => {
-      if (letter.toUpperCase() === letter) 
-    });
+  const chars str.split('');
+  chars.forEach((letter, i) => {
+    if (letter.toUpperCase() === letter)  chars[i] = letter.toLowerCase();
+    else {
+      chars[i] = letter.toUpperCase();
+    }
+    return chars.join('');
   });
 } 

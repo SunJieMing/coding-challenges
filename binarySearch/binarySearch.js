@@ -9,12 +9,12 @@
  *  * console.log(index); // 1
 **/
 
-const binarySearch = (nums, target) {
+const binarySearch = (nums, target) => {
 	let min = 0;
 	let max = nums.length -1;
 	let guessIndex;
 
-	while (mix <= max) {
+	while (min <= max) {
 		guessIndex = Math.floor((min + max) / 2);
 		if (nums[guessIndex] === target) return guessIndex;
 		if (nums[guessIndex] > target) {
@@ -25,6 +25,10 @@ const binarySearch = (nums, target) {
 	}
 	return -1;
 };
+
+// const index = binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2);
+// console.log(index);
+
 
 // const binarySearch = (nums, target) {
 //   const mid = Math.floor(nums.length / 2);
