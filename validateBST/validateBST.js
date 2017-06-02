@@ -5,3 +5,19 @@
  * values in sorted order.
  *
  */
+
+const validateBST = (node) => {
+  let left = false;
+  let right = false;
+  if (node.left) {
+    left = ((node.left.value < node.value) && validateBST(node.left));
+  } else {
+    left = true;
+  }
+  if (node.right) {
+    right = ((node.right.value > node.value) && validateBST(node.right));
+  } else {
+    right = true;
+  }
+  return (left && right);
+};
