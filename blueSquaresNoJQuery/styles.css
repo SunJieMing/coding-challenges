@@ -1,0 +1,14 @@
+body {
+  display: flex;
+}
+
+div {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+.blue {
+  background-color: blue;
+}
