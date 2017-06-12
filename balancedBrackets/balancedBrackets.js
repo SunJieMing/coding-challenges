@@ -17,8 +17,8 @@
  *  balancedBrackets('[(]{)}'); // false
  *
  * Step 3:
- * ignore other characters
- * balancedBrackets(' const obj  = { x: someFunction() }'); // true
- * balancedBrackets(' const foo = () => { console.log('hi');'); // false
+ *  ignore other characters
+ *  balancedBrackets(' const obj  = { x: someFunction() }'); // true
+ *  balancedBrackets(' const foo = () => { console.log('hi');'); // false
  *
  */
