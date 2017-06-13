@@ -4,7 +4,7 @@ const binarySearch = (nums, target) => {
 	let max = nums.length - 1;
   let guessIndex;
 
-  while(min <= max) {
+  while (min <= max) {
     guessIndex = Math.floor((min + max) / 2);
     if (nums[guessIndex] === target) return guessIndex;
     if (nums[guessIndex] > target) {

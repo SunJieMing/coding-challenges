@@ -1,0 +1,14 @@
+{
+  "name": "linked-list-palindrome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linkedListPalindrome.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "taithethai",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}

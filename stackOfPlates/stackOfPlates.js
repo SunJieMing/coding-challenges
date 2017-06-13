@@ -6,3 +6,22 @@
  * (that is, pop( ) should return the same values as it would if there were just a single stack).
  */
 
+class Stack {
+  constructor() {
+    this.arr = []
+  }
+    get size() {
+      return this.arr.length;
+    }
+    add(insert) {
+      this.arr.push(insert);
+    }
+    remove() {
+      if (this.size === 0) return 0;
+      return this.arr.pop();
+  }
+}
+
+class SetOfStacks {
+  
+}

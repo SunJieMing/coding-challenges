@@ -7,3 +7,19 @@
  * (3) A disk cannot be placed on top of a smaller disk.
  * Write a program to move the disks from the first tower to the last using stacks.
  */
+ 
+class Stack {
+  constructor() {
+    this.arr = []
+  }
+    get size() {
+      return this.arr.length;
+    }
+    add(insert) {
+      this.arr.push(insert);
+    }
+    remove() {
+      if (this.size === 0) return 0;
+      return this.arr.pop();
+  }
+}
