@@ -8,9 +8,15 @@
  * The function is already being exported and imported for you.
  * Run your unit tests with the command `npm test` from inside of this folder.
  */
+"use strict";
 
-const fizzBuzz = (num) => {
-
+const fizzBuzz = (num = 0) => {
+  const divisibleBy5 = num % 5 === 0;
+  const divisibleBy3 = num % 3 === 0;
+  if (divisibleBy3 && divisibleBy5) return 'fizzbuzz';
+  if (divisibleBy3) return 'fizz';
+  if (divisibleBy5) return 'buzz';
+  return num;
 };
 
 module.exports = fizzBuzz;
