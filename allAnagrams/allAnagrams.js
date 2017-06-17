@@ -11,3 +11,15 @@
   * var anagrams = allAnagrams('abc');
   * console.log(anagrams); // [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
   */
+
+const allAnagrams = (str) => {
+  const box = [];
+  const arr = str.split('');
+  anagramer(arr);
+};
+
+const anagramer = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    const subarr = arr.slice().splice(i, 1);
+  }
+};

@@ -17,3 +17,7 @@ const deepEquals = (arr1, arr2) => {
   });
   return ans;
 };
+x
+const fasterDE = (arr1, arr2) => {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
+};

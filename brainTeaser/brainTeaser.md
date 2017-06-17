@@ -12,3 +12,4 @@ Note that the jugs are oddly shaped, such that filling up exactly "half" of the 
 | 5    | 2    |
 | 4    | 3    |
 | 4    | 0    |
+t
