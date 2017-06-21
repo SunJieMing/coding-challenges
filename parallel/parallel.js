@@ -38,3 +38,10 @@
  *
  *
  */
+const parallel = (arr, cb) => {
+  const box = [];
+  for (var i = 0; i < arr.length; i++) {
+    box.push(arr[i]());
+  }
+  return cb(box);
+}
