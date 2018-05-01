@@ -10,13 +10,20 @@
  */
 "use strict";
 
-const fizzBuzz = (num = 0) => {
-  const divisibleBy5 = num % 5 === 0;
-  const divisibleBy3 = num % 3 === 0;
-  if (divisibleBy3 && divisibleBy5) return 'fizzbuzz';
-  if (divisibleBy3) return 'fizz';
-  if (divisibleBy5) return 'buzz';
+<<<<<<< HEAD
+const fizzBuzz = (num) => {
+  if (num % 15 === 0) return 'fizzbuzz';
+  if (num % 5 === 0) return 'buzz';
+  if (num % 3 === 0) return 'fizz';
   return num;
+// =======
+// const fizzBuzz = (num = 0) => {
+//   const divisibleBy5 = num % 5 === 0;
+//   const divisibleBy3 = num % 3 === 0;
+//   if (divisibleBy3 && divisibleBy5) return 'fizzbuzz';
+//   if (divisibleBy3) return 'fizz';
+//   if (divisibleBy5) return 'buzz';
+// >>>>>>> 9e3ebd20a77ef7801b11e6a1d2b040d745f339d2
 };
 
 module.exports = fizzBuzz;

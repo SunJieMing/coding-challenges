@@ -38,3 +38,23 @@
  *
  *
  */
+const parallel = (arr, cb) => {
+  const box = [];
+  for (var i = 0; i < arr.length; i++) {
+    box.push(arr[i]());
+  }
+  box = box.map(item => cb(item));
+  return(box);
+}
+
+parallel([
+  function(callback){
+    setTimeout(function(){
+      callback('one');
+    }, 200);
+  },
+  function(callback){
+    setTimeout(function(){
+      callback('two');
+    })
+  }])
